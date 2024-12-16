@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Trade from "./pages/Trade";
 import Analytics from "./pages/Analytics";
 import ProtectedRoute from "./utils/PrivateRoute";
+import NotFound from "./pages/NotFount";
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                     path="/analytics"
                     element={<ProtectedRoute children={<Analytics/>} />}
                 />
-                <Route path="*" element={<Login />}></Route>
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
     );
