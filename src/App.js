@@ -7,6 +7,7 @@ import Trade from "./pages/Trade";
 import Analytics from "./pages/Analytics";
 import ProtectedRoute from "./utils/PrivateRoute";
 import NotFound from "./pages/NotFount";
+import AllStocks from "./pages/AllStocks";
 
 function App() {
     return (
@@ -25,6 +26,10 @@ function App() {
                 <Route
                     path="/analytics"
                     element={<ProtectedRoute children={<Analytics/>} />}
+                />
+                <Route
+                    path="/stocks"
+                    element={<ProtectedRoute children={<AllStocks/>} />}
                 />
                 <Route path="*" element={<NotFound />} />
             </Routes>
