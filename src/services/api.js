@@ -47,6 +47,11 @@ export const getMarketOverview = async () => {
     return response.data;
 };
 
+export const getMarketTopData = async (discoveryFilter) => {
+    const response = await axios.get(`${API_URL}/market/getMarketTopData?discoveryFilter=${discoveryFilter}`);
+    return response.data;
+};
+
 // Search for stocks
 export const searchStock = async (query) => {
     const response = await axios.get(`${API_URL}/stocks/search`, { params: { query } });

@@ -5,8 +5,11 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "@radix-ui/react-tooltip": "^1.1.5",
     "axios": "^1.7.9",
     "chart.js": "^4.4.7",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "cra-template": "1.2.0",
     "framer-motion": "^11.14.4",
     "lucide-react": "^0.468.0",
@@ -14,7 +17,8 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
-    "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1",
+    "tailwind-merge": "^2.5.5"
   },
   "scripts": {
     "start": "react-scripts start",

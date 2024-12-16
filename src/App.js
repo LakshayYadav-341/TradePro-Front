@@ -8,6 +8,7 @@ import Analytics from "./pages/Analytics";
 import ProtectedRoute from "./utils/PrivateRoute";
 import NotFound from "./pages/NotFount";
 import AllStocks from "./pages/AllStocks";
+import MarketTopList from "./components/Market/MarketTopData";
 
 function App() {
     return (
@@ -30,6 +31,14 @@ function App() {
                 <Route
                     path="/stocks"
                     element={<ProtectedRoute children={<AllStocks/>} />}
+                />
+                <Route
+                    path="/top-gainer"
+                    element={<ProtectedRoute children={<MarketTopList type="TOP_GAINERS"/>} />}
+                />
+                <Route
+                    path="/top-loser"
+                    element={<ProtectedRoute children={<MarketTopList type="TOP_LOSERS"/>} />}
                 />
                 <Route path="*" element={<NotFound />} />
             </Routes>
